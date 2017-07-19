@@ -1,0 +1,15 @@
+- name: Install required dev apt packages
+  apt: name={{ item }}
+  with_items:
+    - htop
+    - vim
+    - httpie
+  tags:
+    - env
+
+- name: Install yarn
+  shell: |
+     npm i -g yarn &&
+     yarn global add gulp pm2
+  tags:
+    - env

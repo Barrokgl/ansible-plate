@@ -1,0 +1,13 @@
+# install roles
+
+# from galaxy
+
+- src: https://github.com/jlund/ansible-go
+
+- src: https://github.com/ANXS/postgresql
+
+- src: https://github.com/geerlingguy/ansible-role-nginx 
+
+- src: https://github.com/geerlingguy/ansible-role-nodejs
+
+- src: https://github.com/geerlingguy/ansible-role-git

@@ -1,0 +1,14 @@
+---
+- hosts: all
+  user: root
+  sudo: yes
+
+  roles:
+    - {role: ansible-role-nginx, tags: init}
+    - {role: ansible-go, tags: init}
+    - {role: ansible-role-nodejs, tags: init}
+    - {role: postgresql, tags: init}
+
+  tasks:
+    - include: tasks/devenv.yml
+          
